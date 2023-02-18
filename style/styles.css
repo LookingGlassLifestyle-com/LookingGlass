@@ -1,0 +1,134 @@
+/* redo imports on googlefonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Roboto:wght@500;300&display=swap');
+
+:root {
+  --dark-font: #362B24;
+  --primary-red: #e07961;
+  --primary-purple: #2b273e;
+}
+
+.container-fluid{
+  padding: 0 !important;
+}
+
+.navbar {
+  background-color: transparent;
+}
+.navbar:hover{
+    transition:.6s ease;
+    background-color: white;
+}
+.navbar:focus {
+  background-color:white;
+}
+body {
+  background-color:black;
+}
+
+.navbar-brand {
+  color:white !important;
+  font-family: 'Merriweather', serif;
+  font-size: 35px;
+}
+.navbar:hover .navbar-brand{
+  transition: .6s ease;
+  color:var(--dark-font) !important;
+}
+.nav-link {
+  color:white !important;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+.navbar:hover .nav-link{
+  transition: .6s ease;
+  color:var(--dark-font) !important;
+}
+.home {
+  background-image: url('../imgs/selfie.png');
+  height: 100vh;
+}
+.navbar-toggler-icon {
+  color: white;
+  background-color:white;
+  border: 1px solid black;
+}
+.center-logo {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+}
+.center-sum-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.center-body {
+  height: 80%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+
+.get-started-nav {
+  border: none;
+  font-family: 'Roboto', serif;
+  margin: 1rem;
+  color: var(--dark-font) !important;
+  width: auto;
+  background-color: white;
+  border-radius: 10em;
+}
+.find-style-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-transform: uppercase;
+  border: none;
+  font-size:17px;
+  font-family: 'Roboto', serif;
+  margin: 1rem;
+  color: var(--dark-font);
+  width: auto;
+  background-color: white;
+  border-radius: 10em;
+}
+.find-style-btn:hover {
+  background-color: var(--primary-red);
+  color: white;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: var(--dark-font);
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--dark-font);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* white font for button bug, disabled hover
+ button.get-started-nav:hover {
+  color:white !important;
+  background-color: var(--primary-purple) !important;
+
+} */
+
+.navbar:hover .get-started-nav {
+  background-color: var(--primary-red);
+}
