@@ -1,0 +1,97 @@
+:root {
+  --dark-font: #362B24;
+  --primary-red: #e07961;
+  --primary-purple: #2b273e;
+}
+
+.continue-btn {
+  text-transform: uppercase;
+  border: none;
+  font-family: 'Roboto', serif;
+  margin: 1rem;
+  padding: 20px;
+  color: var(--dark-font) !important;
+  width: auto;
+  background-color: var(--primary-red);
+  border-radius: 10em;
+
+}
+.vert-center {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:black;
+}
+.container-fluid {
+  height: 100vh;
+  display: block;
+}
+.main-question {
+  font-family: 'Merriweather', serif;
+  color: var(--dark-font);
+}
+.additional-prompt {
+  font-family: "Roboto", sans-serif;
+  color: var(--dark-font);
+}
+
+
+
+
+
+/* FORM CSS */
+
+html,body{
+            min-height: 100vh;
+            min-width: 100vw;
+        }
+        .parent{
+            height: 100vh;
+        }
+        .parent>.row{
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .col img{
+            height:100px;
+            width: 100%;
+            cursor: pointer;
+            transition: transform 1s;
+            object-fit: cover;
+        }
+        .col label{
+            overflow: hidden;
+            position: relative;
+        }
+        .imgbgchk:checked + label>.tick_container{
+            opacity: 1;
+        }
+/*         aNIMATION */
+        .imgbgchk:checked + label>img{
+            transform: scale(1.25);
+            opacity: 0.75;
+        }
+        .tick_container {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            cursor: pointer;
+            text-align: center;
+        }
+        .tick {
+            background-color: transparent;
+            color: white;
+            font-size: 16px;
+            padding: 6px 12px;
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+        }
