@@ -15,11 +15,11 @@
   <div class="container-fluid">
     <div class="vert-center">
       <div class="row">
-        <div class="col">
+        <div class="col titles-col">
   <h1 class="display-5 main-question">Select the type of event you are dressing for.</h1>
   <p class="additional-prompt">Just pick whatever event fits best, bestie!</p>
   </div>
-<div class="col">
+</div>
   <!-- black tie
 wedding guest
 going out
@@ -33,47 +33,39 @@ party -->
 
   <input type="radio" id="going-out" name="event-type" value="going-out">
   <label for="going-out">Going Out</label> -->
-  <div class='col text-center'>
-  <input type="radio" name="imgbackground" id="img1" class="d-none imgbgchk" value="">
-    <label for="img1">
-      <img src="imgs/business-woman.jpg" alt="Image 1" style="height:150px;">
-      <div class="tick_container">
-        <div class="tick"><i class="fa fa-check"></i></div>
-      </div>
-      </label>
-  </div>
-  <div class='col text-center'>
-  <input type="radio" name="imgbackground" id="img2" class="d-none imgbgchk" value="">
-    <label for="img2">
-      <img src="https://dummyimage.com/600x400/000/fff" alt="Image 2">
-      <div class="tick_container">
-        <div class="tick"><i class="fa fa-check"></i></div>
-      </div>
+  <div class='col-sm text-center imgs-col'>
+    <label>
+      <input type="radio" name="test" value="small" checked>
+      <img src="imgs/business-woman.jpg" alt="Option 1" style="height:250px;">
     </label>
-  </div>
-  <div class='col text-center'>
-  <input type="radio" name="imgbackground" id="img3" class="d-none imgbgchk" value="">
-    <label for="img3">
-      <img src="https://dummyimage.com/600x400/000/fff" alt="Image 3">
-      <div class="tick_container">
-        <div class="tick"><i class="fa fa-check"></i></div>
-      </div>
+
+    <label>
+      <input type="radio" name="test" value="big">
+      <img src="imgs/sexy.webp" alt="Option 2" style="height:250px;">
     </label>
-  </div>
-  <div class='col text-center'>
-  <input type="radio" name="imgbackground" id="img4" class="d-none imgbgchk" value="">
-      <label for="img4">
-        <img src="https://dummyimage.com/600x400/000/fff" alt="Image 4">
-        <div class="tick_container">
-          <div class="tick"><i class="fa fa-check"></i></div>
-        </div>
-      </label>
+    <label>
+      <input type="radio" name="test" value="big">
+      <img src="imgs/trendy.webp" alt="Option 2" class="img-option">
+    </label>
+    <label>
+      <input type="radio" name="test" value="big">
+      <img src="imgs/job interview.webp" alt="Option 2" style="height:250px;max-width:150px;">
+    </label>
+    <label>
+      <input type="radio" name="test" value="big">
+      <img src="imgs/business-woman.jpg" alt="Option 2" style="height:250px;max-width:150px;">
+    </label>
+    <label>
+      <input type="radio" name="test" value="big">
+      <img src="imgs/business-woman.jpg" alt="Option 2" style="height:250px;">
+    </label>
   </div>
 
 <!-- END OF FORM -->
 
 </div>
-</div>
+
+
 <div class="row fixed-bottom">
   <div class="col text-right">
     <button class="continue-btn" onclick="location.href='survey-q2.html';">&nbsp;&nbsp;continue&nbsp;&nbsp;</button>
