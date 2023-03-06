@@ -16,8 +16,8 @@
     <div class="vert-center">
       <div class="row">
         <div class="col titles-col">
-  <h1 class="display-5 main-question">What location is the event</h1>
-  <p class="additional-prompt"></p>
+  <h1 class="display-5 main-question">What city is this event in</h1>
+  <p class="additional-prompt">We're looking out for weather, city style, and more!</p>
   </div>
 </div>
   <!-- black tie
@@ -34,23 +34,17 @@ party -->
   <input type="radio" id="going-out" name="event-type" value="going-out">
   <label for="going-out">Going Out</label> -->
   <div class='col-sm text-center imgs-col'>
-    <label>
-      <input type="radio" name="test" value="small" checked>
-      <img src="imgs/business-woman.jpg" alt="Option 1" style="height:250px;">
+    <label>Choose a browser from this list:
+    <input list="cities" name="cities" />
     </label>
-
-    <label>
-      <input type="radio" name="test" value="big">
-      <img src="imgs/business-woman.jpg" alt="Option 2" style="height:250px;">
-    </label>
-    <label>
-      <input type="radio" name="test" value="big">
-      <img src="imgs/business-woman.jpg" alt="Option 2" style="height:250px;">
-    </label>
-    <label>
-      <input type="radio" name="test" value="big">
-      <img src="imgs/business-woman.jpg" alt="Option 2" style="height:250px;">
-    </label>
+    <datalist id="cities">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Internet Explorer">
+      <option value="Opera">
+      <option value="Safari">
+      <option value="Microsoft Edge">
+    </datalist>
   </div>
 
 <!-- END OF FORM -->
