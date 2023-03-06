@@ -82,3 +82,7 @@ input[name="cities"] {
   height: 35px;
   width: 350px;
 }
+textarea:focus, input:focus{
+    outline: none;
+    border: 0px;
+}
