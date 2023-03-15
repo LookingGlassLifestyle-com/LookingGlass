@@ -78,11 +78,32 @@
 input[name="cities"] {
   border: 0px;
   box-shadow: 0px  1px 0 0;
-  padding: 5px;
+  padding: 20px;
+  color: var(--dark-font) !important;
   height: 35px;
-  width: 350px;
+  width: 450px;
+  font-size: 35px;
+  font-family: 'Merriweather', serif;
+  word-wrap: break-word;
 }
 textarea:focus, input:focus{
     outline: none;
     border: 0px;
+}
+input[name="date-time"] {
+  border: 0px;
+  padding: 20px;
+  color: var(--dark-font) !important;
+  font-size:35px;
+  font-family: 'Merriweather', serif;
+}
+input[name="anything-else"] {
+  border: 0px;
+  box-shadow: 0px  1px 0 0;
+  padding: 20px;
+  color: var(--dark-font) !important;
+  height: 35px;
+  width: 450px;
+  font-size: 25px;
+  font-family: 'Merriweather', serif;
 }

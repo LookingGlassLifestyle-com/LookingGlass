@@ -10,6 +10,21 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+  rel="stylesheet"
+/>
 </head>
 <body>
   <div class="container-fluid">
@@ -34,18 +49,8 @@ party -->
   <input type="radio" id="going-out" name="event-type" value="going-out">
   <label for="going-out">Going Out</label> -->
   <div class='col-sm text-center imgs-col'>
-    <label>Datetime:
-    <input list="cities" name="cities" />
-    </label>
-    <datalist id="cities">
-      <option value="Houston">
-      <option value="Austin">
-      <option value="New York City">
-      <option value="San Francisco">
-      <option value="Los Angeles">
-      <option value="Dallas">
-    </datalist>  </div>
-
+   <input type="datetime-local" id="date-time" name="date-time" class='date-time'> 
+      </div>
 <!-- END OF FORM -->
 
 </div>
@@ -60,4 +65,15 @@ party -->
 </div>
 
   </div>
+  <!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
+></script>
+<script>
+// Data Picker Initialization
+$('.datepicker').datepicker({
+  inline: true
+});
+</script>
 </body>
