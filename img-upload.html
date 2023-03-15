@@ -16,8 +16,8 @@
     <div class="vert-center">
       <div class="row">
         <div class="col titles-col">
-  <h1 class="display-5 main-question">Select how you want to look and feel ____.</h1>
-  <p class="additional-prompt"></p>
+  <h1 class="display-5 main-question">What outfits are you considering?</h1>
+  <p class="additional-prompt">Upload up to 5 images of your options.</p>
   </div>
 </div>
   <!-- black tie
@@ -34,23 +34,27 @@ party -->
   <input type="radio" id="going-out" name="event-type" value="going-out">
   <label for="going-out">Going Out</label> -->
   <div class='col-sm text-center imgs-col'>
-    <label>
-      <input type="radio" name="test" value="small" checked>
-      <img src="imgs/smoking-hot.jpg" alt="Option 1" style="height:250px;">
+    <label for="file-upload" class="custom-file-upload">
+        Outfit 1
     </label>
+    <input id="file-upload" type="file"/>
+    <label for="file-upload" class="custom-file-upload">
+        Outfit 2
+    </label>
+    <input id="file-upload" type="file"/>
+    <label for="file-upload" class="custom-file-upload">
+        Outfit 3
+    </label>
+    <input id="file-upload" type="file"/>
+    <label for="file-upload" class="custom-file-upload">
+        Outfit 4
+    </label>
+    <input id="file-upload" type="file"/>
+    <label for="file-upload" class="custom-file-upload">
+        Outfit 5
+    </label>
+    <input id="file-upload" type="file"/>
 
-    <label>
-      <input type="radio" name="test" value="big">
-      <img src="imgs/fit right in.jpg" alt="Option 2" style="height:250px;">
-    </label>
-    <label>
-      <input type="radio" name="test" value="big">
-      <img src="imgs/trendy.jpg" alt="Option 2" style="height:250px;">
-    </label>
-    <label>
-      <input type="radio" name="test" value="big">
-      <img src="imgs/polished.jpg" alt="Option 2" style="height:250px;">
-    </label>
   </div>
 
 <!-- END OF FORM -->
@@ -60,7 +64,7 @@ party -->
 
 <div class="row fixed-bottom">
   <div class="col text-right">
-    <button class="continue-btn" onclick="location.href='survey-q3.html';">&nbsp;&nbsp;continue&nbsp;&nbsp;</button>
+    <button class="continue-btn" onclick="location.href='survey-q5.html';">&nbsp;&nbsp;continue&nbsp;&nbsp;</button>
 
 </div>
 </div>
