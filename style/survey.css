@@ -107,12 +107,15 @@ input[name="anything-else"] {
   font-size: 25px;
   font-family: 'Merriweather', serif;
 }
-.custom-file-upload {
-    border: 1px solid #ccc;
-    display: inline-block;
-    padding: 6px 12px;
-    cursor: pointer;
-}
+
 input[type="file"] {
-    display: none;
+  outline: none;
+  border: 0px;
+}
+input, textarea {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }

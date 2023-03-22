@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="vert-center">
+    <div class="row">
+      <div class="col titles-col">
+                    <h1 class="display-5 main-question">Select the type of event you are dressing for.</h1>
+                    <p class="additional-prompt">Just pick whatever event fits best!</p>
+                </div>
+                </div>
+          <div class='col-sm text-center imgs-col'>
+    <label>
+      <input type="radio" name="event_type" value="small" checked>
+        <img src="{% static 'render/media/business-woman.jpg' %}" alt="Option 1" class="img-option" />
+    </label>
+
+    <label>
+      <input type="radio" name="event_type" value="big">
+                 <img src="{% static 'render/media/black tie_special event.jpeg' %}" alt="Option 2" class="img-option" />
+    </label>
+    <label>
+      <input type="radio" name="event_type" value="big">
+             <img src="{% static 'render/media/date night.jpg' %}" alt="Option 3" class="img-option" />
+    </label>
+    <label>
+      <input type="radio" name="event_type" value="big">
+            <img src="{% static 'render/media/wedding guest.jpg' %}" alt="Option 4" class="img-option" />
+    </label>
+    <label>
+      <input type="radio" name="event_type" value="big">
+             <img src="{% static 'render/media/festival.jpg' %}" alt="Option 5" class="img-option" />
+    </label>
+    <label>
+      <input type="radio" name="event_type" value="big">
+         <img src="{% static 'render/media/going-out.jpg' %}" alt="Option 6" class="img-option" />
+    </label>
+  </div>
+    <button type="button" id="nextBtn" class='continue-btn' onclick="nextPrev(1)">Next</button>
+    </div>
+          </div>
