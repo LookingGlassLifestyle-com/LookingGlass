@@ -67,9 +67,16 @@
 .img-option {
   /* 7 percent ratio for business woman 3600 px */
   height:30vh;
-  max-width: 190px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  max-width: 180px;
 }
-
+.img-option-long {
+  height:30vh;
+  margin-bottom: 20px;
+  object-fit: cover;
+  max-width: 300px;
+}
 @media screen and (max-width: 1000px) {
   .imgs-col {
     margin-top:500px;
@@ -95,7 +102,7 @@ input[name="date-time"] {
   padding: 20px;
   color: var(--dark-font) !important;
   font-size:35px;
-  font-family: 'Merriweather', serif;
+  font-family: serif;
 }
 input[name="anything-else"] {
   border: 0px;
@@ -108,14 +115,54 @@ input[name="anything-else"] {
   font-family: 'Merriweather', serif;
 }
 
-input[type="file"] {
+/* input[type="file"] {
   outline: none;
   border: 0px;
+} */
+
+div.image-text {
+  border: 1px solid #000;
+  height: 30px;
+  width: 150px;
+  position:absolute;
+  margin-left: 10px;
+  background: white;
 }
-input, textarea {
-  -webkit-user-select: text;
-  -khtml-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
+
+div#image-text1 {
+  display: none;
+}
+div#image-text2 {
+  display: none;
+}
+div#image-text3 {
+  display: none;
+}
+div#image-text4 {
+  display: none;
+}
+div#image-text5 {
+  display: none;
+}
+div#image-text6 {
+  display: none;
+}
+
+label#image-box1:hover div#image-text1 {
+  display: block;
+}
+label#image-box2:hover div#image-text2 {
+  display: block;
+}
+label#image-box3:hover div#image-text3 {
+  display: block;
+}
+label#image-box4:hover div#image-text4 {
+  display: block;
+}
+label#image-box5:hover div#image-text5 {
+  display: block;
+}
+label#image-box6:hover div#image-text6 {
+  display: block;
 }
