@@ -1,0 +1,329 @@
+.q1-img {
+  height:75%;
+  width:75%;
+  max-width: 250px;
+  display:block;
+}
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+  right:100px;
+}
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+.row > div {
+}
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  #imgs-col-1 {
+    position:relative;
+    left: 200px;
+  }
+  #move-right {
+    position:static;
+    right: -100px;
+  }
+
+  #imgs-col-2 {
+    position: relative;
+    left: 150px;
+  }
+  /* CSS */
+  .col-q1 {
+  position: relative;
+  left: 100px;
+    }
+  .row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top:100px;
+    left:100px;
+    position:relative;
+  }
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #imgs-col-1 {
+    position:relative;
+    left: 200px;
+  }
+  #move-right {
+    position:absolute;
+    right: -100px;
+  }
+  #imgs-col-2 {
+    position: relative;
+    left: 150px;
+  }
+  /* CSS */
+  .col-q1 {
+  position: relative;
+  left: 100px;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #imgs-col-1 {
+    position:relative;
+    left: 200px;
+  }
+  #move-right {
+    position:absolute;
+    right: -100px;
+  }
+  #imgs-col-2 {
+    position: relative;
+    left: 150px;
+  }
+  /* CSS */
+  .col-q1 {
+  position: relative;
+  left: 100px;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  #imgs-col-1 {
+    position:relative;
+    left: 200px;
+  }
+  #move-right {
+    position:static;
+    right: 0px;
+  }
+  #imgs-col-2 {
+    position: relative;
+    left: 150px;
+  }
+  /* CSS */
+  .col-q1 {
+  position: relative;
+  left: 100px;
+    }
+    .title-q1 {
+      right:100px;
+    }
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  #imgs-col-1{
+    position:static;
+    left: 0px;
+  }
+  #move-right {
+    position:static;
+    right: 0px;
+  }
+  #imgs-col-2 {
+    position:static;
+    left: 0px;
+  }
+  /* CSS */
+  .col-q1 {
+  position: static;
+    }
+    .title-q1 {
+      position:relative;
+      right:100px;
+    }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #imgs-col-1{
+    position:static;
+    left: 0px;
+  }
+  #move-right {
+    position:static;
+    right: 0px;
+  }
+  #imgs-col-2 {
+    position:static;
+    left: 0px;
+  }
+  /* CSS */
+  .col-q1 {
+  position: static;
+    }
+    .title-q1 {
+      position:relative;
+      right:75px;
+    }
+}
+
+
+
+:root {
+  --dark-font: #362B24;
+  --primary-red: #e07961;
+  --primary-purple: #2b273e;
+}
+
+.continue-btn {
+  text-transform: uppercase;
+  border: none;
+  font-family: 'Roboto', serif;
+  margin: 1rem;
+  padding: 20px;
+  color: var(--dark-font) !important;
+  width: auto;
+  background-color: var(--primary-red);
+  border-radius: 10em;
+}
+
+
+.main-question {
+  font-family: 'Merriweather', serif;
+  color: var(--dark-font);
+}
+.additional-prompt {
+  font-family: "Roboto", sans-serif;
+  color: var(--dark-font);
+}
+
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+  outline: 2px solid #f00;
+}
+
+
+textarea:focus, input:focus{
+    outline: none;
+    border: 0px;
+}
+input[name="date-time"] {
+  border: 0px;
+  padding: 20px;
+  color: var(--dark-font) !important;
+  font-size:35px;
+  font-family: serif;
+}
+input[name="anything-else"] {
+  border: 0px;
+  box-shadow: 0px  1px 0 0;
+  padding: 20px;
+  color: var(--dark-font) !important;
+  height: 35px;
+  width: 450px;
+  font-size: 25px;
+  font-family: 'Merriweather', serif;
+}
+
+/* input[type="file"] {
+  outline: none;
+  border: 0px;
+} */
+
+div.image-text {
+  border: 1px solid #000;
+  position:absolute;
+  margin-left: 10px;
+  background: white;
+}
+
+div#image-text1 {
+  display: none;
+}
+div#image-text2 {
+  display: none;
+}
+div#image-text3 {
+  display: none;
+}
+div#image-text4 {
+  display: none;
+}
+div#image-text5 {
+  display: none;
+}
+div#image-text6 {
+  display: none;
+}
+div#image-text7 {
+  display: none;
+}
+div#image-text8 {
+  display: none;
+}
+div#image-text9 {
+  display: none;
+}
+div#image-text10 {
+  display: none;
+}
+
+label#image-box1:hover div#image-text1 {
+  display: block;
+}
+label#image-box2:hover div#image-text2 {
+  display: block;
+}
+label#image-box3:hover div#image-text3 {
+  display: block;
+}
+label#image-box4:hover div#image-text4 {
+  display: block;
+}
+label#image-box5:hover div#image-text5 {
+  display: block;
+}
+label#image-box6:hover div#image-text6 {
+  display: block;
+}
+label#image-box7:hover div#image-text7 {
+  display: block;
+}
+label#image-box8:hover div#image-text8 {
+  display: block;
+}
+label#image-box9:hover div#image-text9 {
+  display: block;
+}
+label#image-box10:hover div#image-text10 {
+  display: block;
+}
