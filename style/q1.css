@@ -25,7 +25,7 @@
 @media (min-width: 1281px) {
   #imgs-col-1 {
     position:relative;
-    left: 200px;
+    left: 175px;
   }
   #move-right {
     position:static;
@@ -34,7 +34,7 @@
 
   #imgs-col-2 {
     position: relative;
-    left: 150px;
+    left: 135px;
   }
   /* CSS */
   .col-q1 {
@@ -47,6 +47,9 @@
     padding-top:100px;
     left:100px;
     position:relative;
+  }
+  .date-time {
+    font-size: 40px !important;
   }
 }
 
@@ -73,6 +76,9 @@
   position: relative;
   left: 100px;
     }
+    .date-time {
+      font-size: 30px !important;
+    }
 }
 
 /*
@@ -97,6 +103,9 @@
   .col-q1 {
   position: relative;
   left: 100px;
+    }
+    .date-time {
+      font-size: 20px !important;
     }
 }
 
@@ -126,6 +135,9 @@
     .title-q1 {
       right:100px;
     }
+    .date-time {
+      font-size: 20px !important;
+    }
 }
 
 /*
@@ -154,6 +166,9 @@
       position:relative;
       right:100px;
     }
+    .date-time {
+      font-size: 20px !important;
+    }
 }
 
 /*
@@ -161,7 +176,7 @@
   ##Screen = B/w 320px to 479px
 */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) {
   #imgs-col-1{
     position:static;
     left: 0px;
@@ -178,9 +193,9 @@
   .col-q1 {
   position: static;
     }
-    .title-q1 {
-      position:relative;
-      right:75px;
+
+    .date-time {
+      font-size: 20px !important;
     }
 }
 
