@@ -1,3 +1,9 @@
+@font-face {
+    font-family: optima;
+    src: url(OPTIMA.ttf);
+}
+
+
 .q1-img {
   height:75%;
   width:75%;
@@ -27,6 +33,7 @@
     position:relative;
     left: 175px;
   }
+
   #move-right {
     position:static;
     right: -100px;
@@ -199,6 +206,16 @@
     }
 }
 
+
+.image-text {
+  font-family: 'Libre Baskerville', serif !important;
+}
+.title-q1 {
+  font-family: 'Libre Baskerville', serif !important;
+}
+.additional-prompt {
+  font-family: 'optima' serif !important;
+}
 
 
 :root {
